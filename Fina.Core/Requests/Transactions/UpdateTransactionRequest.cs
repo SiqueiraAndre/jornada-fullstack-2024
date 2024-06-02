@@ -8,7 +8,7 @@ public class UpdateTransactionRequest : Request
   public long Id { get; set; }
   
   [Required(ErrorMessage = "Título inválido")]
-  public string PageTitle { get; set; } = string.Empty;
+  public string Title { get; set; } = string.Empty;
 
   [Required(ErrorMessage = "Tipo inválido")]
   public ETransactionType Type { get; set; } = ETransactionType.Withdraw;
